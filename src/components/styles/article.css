@@ -1,9 +1,13 @@
 .article__container {
   margin: 24px auto;
   width: 88vw;
-  border: 1px solid red;
+  border: 1px solid rgba(255, 255, 255, 0.200);
   display: flex;
   height: 260px;
+  border-radius: 8px;
+}
+
+.article__section-image {
   border-radius: 8px;
 }
 
@@ -11,7 +15,8 @@
   object-fit: cover;
   width: 350px;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 8px 0 0 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.200);
 }
 
 .article__section-content {
@@ -24,4 +29,19 @@
 .article__section-footer {
   display: flex;
   justify-content: space-between;
+}
+
+.article__section-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #3077b5;
+  border-radius: 0 8px 8px 0;
+}
+
+.article__section-social img {
+  width: 2vw;
+  background-color: #3077b5;
 }

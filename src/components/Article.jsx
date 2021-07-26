@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/article.css';
+import shareLinkedin from '../assets/images/linkedin-share-button.png'
 
 export default function Article({ article }) {
   const { title, urlToImage, description, publishedAt, source: { name }, url } = article;
@@ -15,8 +16,15 @@ export default function Article({ article }) {
         <section className="article__section-footer">
           <span>{ publishedAt.split('T')[0] }</span>
           <span>{ name.split('.')[0] }</span>
+          
+          
           <a href={ url }>{'Ver notícia completa >'}</a>
         </section>
+      </section>
+      <section className="article__section-social">
+        <a href={ `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&summary=${description}&source=${name}` }>
+          <img src={ shareLinkedin } alt="Share linkedin" />
+        </a>
       </section>
 
     </main>
