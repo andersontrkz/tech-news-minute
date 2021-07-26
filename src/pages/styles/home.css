@@ -1,3 +1,9 @@
-header img {
+.header__section {
+  background-color: #f68b01;
+  display: flex;
+  justify-content: center;
+}
+
+.header__section img {
   height: 30px;
 }

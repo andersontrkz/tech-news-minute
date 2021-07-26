@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <div>
-      <header>
+      <header className="header__section">
         <img src={ logoNews } alt="Logo" />
       </header>
       { news.map((article, index) => <Article article={article} key={index}/>) }
