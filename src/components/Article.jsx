@@ -1,0 +1,24 @@
+import React from 'react';
+import './styles/article.css';
+
+export default function Article({ article }) {
+  const { title, urlToImage, description, publishedAt, source: { name }, url } = article;
+
+  return (
+    <main className="article__container">
+      <section className="article__section-image">
+        <img src={urlToImage} alt={title} />
+      </section>
+      <section className="article__section-content">
+        <h1>{ title }</h1>
+        <p>{ description }</p>
+        <section className="article__section-footer">
+          <span>{ publishedAt.split('T')[0] }</span>
+          <span>{ name.split('.')[0] }</span>
+          <a href={ url }>{'Ver notícia completa >'}</a>
+        </section>
+      </section>
+
+    </main>
+  )
+}

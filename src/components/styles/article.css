@@ -1,0 +1,27 @@
+.article__container {
+  margin: 24px auto;
+  width: 88vw;
+  border: 1px solid red;
+  display: flex;
+  height: 260px;
+  border-radius: 8px;
+}
+
+.article__section-image img {
+  object-fit: cover;
+  width: 350px;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.article__section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 24px 18px;
+}
+
+.article__section-footer {
+  display: flex;
+  justify-content: space-between;
+}
