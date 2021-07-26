@@ -11,7 +11,7 @@ export default function Article({ article }) {
         <img src={urlToImage} alt={title} />
       </section>
       <section className="article__section-content">
-        <h1>{ title }</h1>
+        <h3>{ title }</h3>
         <p>{ description }</p>
         <section className="article__section-footer">
           <span>{ publishedAt.split('T')[0] }</span>
@@ -21,11 +21,9 @@ export default function Article({ article }) {
           <a href={ url }>{'Ver notícia completa >'}</a>
         </section>
       </section>
-      <section className="article__section-social">
-        <a href={ `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&summary=${description}&source=${name}` }>
-          <img src={ shareLinkedin } alt="Share linkedin" />
-        </a>
-      </section>
+      <a className="article__section-social" href={ `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&summary=${description}&source=${name}` }>
+        <img src={ shareLinkedin } alt="Share linkedin" />
+      </a>
 
     </main>
   )

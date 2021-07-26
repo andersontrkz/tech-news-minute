@@ -13,7 +13,9 @@ export default function Home() {
       <header className="header__section">
         <img src={ logoNews } alt="Logo" />
       </header>
-      { news.map((article, index) => <Article article={article} key={index}/>) }
+      <main className="content_section">
+        { news.map((article, index) => <Article article={article} key={index}/>) }
+      </main>
     </div>
   )
 }

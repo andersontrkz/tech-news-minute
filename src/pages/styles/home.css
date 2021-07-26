@@ -2,8 +2,15 @@
   background-color: #f68b01;
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .header__section img {
   height: 30px;
+}
+
+.content_section {
+  margin-top: 60px;
 }
