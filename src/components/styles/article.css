@@ -46,3 +46,36 @@
   width: 2vw;
   background-color: #3077b5;
 }
+
+@media screen and (max-width: 768px) {
+  .article__container {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+
+  .article__section-image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .article__section-image img {
+    width: 88vw;
+    height: 30vh;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .article__section-social {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .article__section-social img {
+    transform: rotate(90deg);
+  }
+
+  .article__section-footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
