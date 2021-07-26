@@ -6,16 +6,18 @@ import fetchNews from '../services/news'
 function Provider({ children }) {
   const [news, setNews] = useState([]);
 
-  const setFetchNews = async () => {
-    setNews(await fetchNews());
+  const setFetchNews = async (country) => {
+    setNews([]);
+    setNews(await fetchNews(country));
   }
   
   useEffect(() => {
-    setFetchNews();
+    setFetchNews('br');
   }, [])
 
   const context = {
-    news
+    news,
+    setFetchNews,
   };
 
   return (

@@ -11,6 +11,19 @@
   height: 30px;
 }
 
-.content_section {
+.home__select-country {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.home__select-country img {
+  cursor: pointer;
+  height: 30px;
+  margin: 0 18px;
+  border-radius: 50%;
+}
+
+.home__content-section {
   margin-top: 60px;
 }
