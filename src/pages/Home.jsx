@@ -26,7 +26,7 @@ export default function Home() {
           <img id="us" src={ logoUS } alt="" onClick={ selectNewsCountry }/>
           <img id="fr" src={ logoFR } alt="" onClick={ selectNewsCountry }/>
         </section>
-        { news.map((article, index) => <Article article={article} key={index}/>) }
+        { news[0] ? news.map((article, index) => <Article article={article} key={index}/>) : 'Carregando...' }
       </main>
     </div>
   )
