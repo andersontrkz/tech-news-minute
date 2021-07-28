@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tech-news-minute/static/css/main.a7a03e16.chunk.css",
-    "main.js": "/tech-news-minute/static/js/main.bdef2dc8.chunk.js",
-    "main.js.map": "/tech-news-minute/static/js/main.bdef2dc8.chunk.js.map",
+    "main.js": "/tech-news-minute/static/js/main.4ddfa6c8.chunk.js",
+    "main.js.map": "/tech-news-minute/static/js/main.4ddfa6c8.chunk.js.map",
     "runtime-main.js": "/tech-news-minute/static/js/runtime-main.f402ca04.js",
     "runtime-main.js.map": "/tech-news-minute/static/js/runtime-main.f402ca04.js.map",
     "static/js/2.a59c35ff.chunk.js": "/tech-news-minute/static/js/2.a59c35ff.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.f402ca04.js",
     "static/js/2.a59c35ff.chunk.js",
     "static/css/main.a7a03e16.chunk.css",
-    "static/js/main.bdef2dc8.chunk.js"
+    "static/js/main.4ddfa6c8.chunk.js"
   ]
 }
