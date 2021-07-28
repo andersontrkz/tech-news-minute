@@ -7,12 +7,12 @@ function Provider({ children }) {
   const [news, setNews] = useState([]);
 
   const setFetchNews = async (country) => {
-    // setNews([]);
+    setNews([]);
     setNews(await fetchNews(country));
   }
   
   useEffect(() => {
-    setFetchNews('br');
+    setFetchNews('us');
   }, [])
 
   const context = {
