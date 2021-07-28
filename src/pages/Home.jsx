@@ -29,7 +29,7 @@ export default function Home() {
         { news[0] ? news.map((article, index) => <Article article={article} key={index}/>) : 'Carregando...' }
       </main>
       <footer>
-        <span>©, Tech News Minutes. Todos os direitos reservados.</span>
+        <span>©, Tech News Minutes - Todos os direitos reservados.</span>
       </footer>
     </div>
   )
