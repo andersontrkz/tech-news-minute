@@ -7,7 +7,7 @@ const fetchNews = async (country) => {
   const { articles } = response;
 
   let newArticles = articles.reduce(function(accumulator, article) {
-    if (article.urlToImage) {
+    if (article.urlToImage && article.source.name !== 'Editalconcursosbrasil.com.br' && article.source.name !== 'Seudinheiro.com') {
       accumulator.push(article)
     }
     return accumulator

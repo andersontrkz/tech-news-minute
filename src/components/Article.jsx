@@ -5,8 +5,13 @@ import shareLinkedin from '../assets/images/linkedin-share-button.png'
 export default function Article({ article }) {
   const { title, urlToImage, description, publishedAt, source: { name }, url } = article;
 
+  const generateArticleHashlink = () => {
+    const hash = title.split(' ').join('-');
+    return hash;
+  }
+
   return (
-    <main className="article__container">
+    <main className="article__container" id={ generateArticleHashlink() }>
       <section className="article__section-image">
         <img src={urlToImage} alt={title} />
       </section>
@@ -21,7 +26,7 @@ export default function Article({ article }) {
           <a href={ url }>{'Ver notícia completa >'}</a>
         </section>
       </section>
-      <a className="article__section-social" href={ `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&summary=${description}&source=${name}` }>
+      <a className="article__section-social" href={ `https://www.linkedin.com/shareArticle?mini=true&url=https://andersontrkz.github.io/#${generateArticleHashlink()}&title=${title}&summary=${description}&source=${name}` }>
         <img src={ shareLinkedin } alt="Share linkedin" />
       </a>
 

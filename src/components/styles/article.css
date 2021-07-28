@@ -47,11 +47,12 @@
   background-color: #3077b5;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   .article__container {
     flex-direction: column;
     height: 100vh;
     justify-content: space-between;
+    margin-bottom: 45px;
   }
 
   .article__section-image {
