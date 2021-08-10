@@ -14,7 +14,7 @@ export default function Home() {
         <img src={ logoNews } alt="Logo" />
       </header>
       <main className="home__content-section">
-        { news[0] ? news.map((article, index) => <Article article={article} key={index}/>) : 'Carregando...' }
+        { news[0] ? news.map((article, index) => <Article article={article} key={index}/>) : <div class="loader" /> }
       </main>
       <footer>
         <span>©, Tech News Minutes. Todos os direitos reservados.</span>

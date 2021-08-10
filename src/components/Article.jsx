@@ -6,7 +6,8 @@ export default function Article({ article }) {
   const { title, image: { url: image }, description, datePublished, provider: { name: source } , url } = article;
 
   const generateArticleHashlink = () => {
-    const hash = title.split(' ').join('-');
+    const hash = title.replace(/[^a-zA-Z ]/g, "").split(' ').join('-');
+    console.log(hash)
     return hash;
   }
 
@@ -26,7 +27,8 @@ export default function Article({ article }) {
           <a href={ url }>{'Ver notícia completa >'}</a>
         </section>
       </section>
-      <a className="article__section-social" href={ `https://www.linkedin.com/shareArticle?mini=true&url=https://andersontrkz.github.io/#${generateArticleHashlink()}&title=${title}&summary=${description}&source=${source}` }>
+      <meta property='og:image' content={`${image}`}/>
+      <a className="article__section-social" href={ `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&summary=${description}&source=${source}` }>
         <img src={ shareLinkedin } alt="Share linkedin" />
       </a>
 
