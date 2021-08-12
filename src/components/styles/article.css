@@ -67,6 +67,18 @@
     border-radius: 8px 8px 0 0;
   }
 
+  .article__section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+  }
+
+  .article__section-content p, .article__section-content h3 {
+    padding: 0 16px 0 16px;
+  }
+
   .article__section-social {
     border-radius: 0 0 8px 8px;
   }

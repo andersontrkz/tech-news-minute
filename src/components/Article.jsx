@@ -11,6 +11,13 @@ export default function Article({ article }) {
     return hash;
   }
 
+  const generateArticleDescription = () => {
+    if(description.length > 275) {
+      return `${description.substr(1, 270)}...`;
+    }
+    return description;
+  }
+
   return (
     <main className="article__container" id={ generateArticleHashlink() }>
       <section className="article__section-image">
@@ -18,7 +25,7 @@ export default function Article({ article }) {
       </section>
       <section className="article__section-content">
         <h3>{ title }</h3>
-        <p>{ description }</p>
+        <p>{ generateArticleDescription() }</p>
         <section className="article__section-footer">
           <span>{ datePublished.split('T')[0] }</span>
           <span>{ source.charAt(0).toUpperCase() + source.substr(1)}</span>
